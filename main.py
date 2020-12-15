@@ -1,9 +1,6 @@
 from pathlib import Path
 from SMWinservice import SMWinservice
-
-def wrtiteHello():
-    print('Hello there...')
-
+import mainCJF
 
 class svcCJF(SMWinservice):
     _svc_name_ = "svcCJF"
@@ -18,7 +15,8 @@ class svcCJF(SMWinservice):
 
     def main(self):
         while self.isrunning:
-            wrtiteHello()
+            mainCJF
+            
 
 if __name__ == '__main__':
     svcCJF.parse_command_line()
