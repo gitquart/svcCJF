@@ -1,0 +1,2 @@
+C:\Users\1098350515\AppData\Local\Programs\Python\Python38\lib\site-packages\win32\
+C:\Users\1098350515\AppData\Local\Programs\Python\Python38\Lib\site-packages\pywin32_system32
