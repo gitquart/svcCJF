@@ -130,7 +130,7 @@ def maincjf():
 
         if startPage>100:
             print('Done with query: ',topic, ' . Please change topic')  
-            os.sys.exit(0)  
+              
 
 
     browser.quit()

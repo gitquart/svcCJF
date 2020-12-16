@@ -4,7 +4,7 @@ import mainCJF
 
 class svcCJF(SMWinservice):
     _svc_name_ = "svcCJF"
-    _svc_display_name_ = "Service for CJF"
+    _svc_display_name_ = "svcCJF"
     _svc_description_ = "Service CJF..."
 
     def start(self):
