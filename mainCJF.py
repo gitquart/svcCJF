@@ -85,6 +85,7 @@ def maincjf():
             else:    
                 ten=str(startPage)
                 ten=int(ten[0])+1
+                dec=int(ten[1])+1
             for times in range(1,ten):
                 if times==1:
                     SectionNextPages=browser.find_elements_by_xpath("//*[@id='grdSentencias_ctl00']/tfoot/tr/td/table/tbody/tr/td/div[2]/a[11]")[0].click()
@@ -98,6 +99,15 @@ def maincjf():
                     btnBuscaTema=tool.devuelveElemento('//*[@id="btnBuscarPorTema_input"]',browser)
                     btnBuscaTema.click()
                     time.sleep(5)
+            #Mechanism no failure
+            for i in range(1,dec):
+                NextSinglePage=tool.devuelveElemento("//*[@id='grdSentencias_ctl00']/tfoot/tr/td/table/tbody/tr/td/div[3]/input[1]",browser)
+                NextSinglePage.click()  
+                time.sleep(5) 
+            #End of non failire mechanism
+            
+
+                    
 
         #Rest for 10 seconds just to slow down
         time.sleep(10)
