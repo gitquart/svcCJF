@@ -15,7 +15,7 @@ class svcCJF(SMWinservice):
 
     def main(self):
         while self.isrunning:
-            mainCJF
+            mainCJF.maincjf()
             
 
 if __name__ == '__main__':
