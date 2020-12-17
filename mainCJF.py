@@ -31,13 +31,16 @@ options.add_experimental_option("prefs", profile)
 #Erase every file in download folder at the beginning to avoid mixed files
 for file in os.listdir(download_dir):
     os.remove(download_dir+'\\'+file)
+msj=''    
 def maincjf():
     tool.appendInfoToFile('C:\\','CJF_log.txt','Download folder empty...')
     chromedriver_autoinstaller.install()
+    tool.appendInfoToFile('C:\\','CJF_log.txt','Good')
     browser=webdriver.Chrome(options=options)
     browser.get('chrome://settings/clearBrowserData')
     browser.find_element_by_xpath('//settings-ui').send_keys(Keys.ENTER)
-    print('Browser data clear...')
+    msj='Browser data clear...'
+    tool.appendInfoToFile('C:\\','CJF_log.txt',msj)
     #Since here both versions (heroku and desktop) are THE SAME
     url="https://sise.cjf.gob.mx/consultasvp/default.aspx"
     response= requests.get(url)
