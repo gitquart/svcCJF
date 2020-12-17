@@ -11,7 +11,13 @@ Steps to install service:
 
 If error 1053 appears when starting service, add the following lines to System path (environment variables):
 
+PATHS: 
 C:\Users\1098350515\AppData\Local\Programs\Python\Python38\lib\site-packages\win32\
 C:\Users\1098350515\AppData\Local\Programs\Python\Python38\Lib\site-packages\pywin32_system32
 C:\Users\1098350515\AppData\Local\Programs\Python\Python38
 C:\Users\1098350515\AppData\Local\Programs\Python\Python38\Scripts
+
+Instalación en computadora de Jesús:
+
+1) Se instalaron todos los módulos uno por uno.
+2)Poner los PATHS en variables del sistema (Variables de entorno)
