@@ -20,7 +20,7 @@ class svcCJF(SMWinservice):
         try:
             mainCJF.maincjf()
         except:
-            tool.appendInfoToFile('C:\\','test.txt',str(sys.exc_info()[0]))
+            tool.appendInfoToFile('C:\\','CJF_log.txt',str(sys.exc_info()[0]))
 
             
 
