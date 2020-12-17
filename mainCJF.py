@@ -142,7 +142,8 @@ def maincjf():
             time.sleep(5) 
 
         if startPage>100:
-            print('Done with query: ',topic, ' . Please change topic')  
+            print('Done with query: ',topic, ' . Please change topic') 
+            os.sys.exit(0) 
               
 
 
