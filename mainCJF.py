@@ -35,7 +35,6 @@ msj=''
 def maincjf():
     tool.appendInfoToFile('C:\\','CJF_log.txt','Download folder empty...')
     chromedriver_autoinstaller.install()
-    tool.appendInfoToFile('C:\\','CJF_log.txt','Good')
     browser=webdriver.Chrome(options=options)
     browser.get('chrome://settings/clearBrowserData')
     browser.find_element_by_xpath('//settings-ui').send_keys(Keys.ENTER)
