@@ -32,7 +32,7 @@ options.add_experimental_option("prefs", profile)
 for file in os.listdir(download_dir):
     os.remove(download_dir+'\\'+file)
 def maincjf():
-    print('Download folder empty...')
+    tool.appendInfoToFile('C:\\','CJF_log.txt','Download folder empty...')
     chromedriver_autoinstaller.install()
     browser=webdriver.Chrome(options=options)
     browser.get('chrome://settings/clearBrowserData')
@@ -61,7 +61,8 @@ def maincjf():
         topic=str(lsInfo[0])
         page=str(lsInfo[1])
         startPage=int(page)
-        print('Cassandra info:',str(startPage),'with query:',str(topic))
+        msj='Cassandra info:'+str(startPage)+',with query:'+str(topic)
+        tool.appendInfoToFile('C:\\','CJF_log.txt',msj)
 
         #class names for li: rtsLI rtsLast
         liBuscar=browser.find_elements_by_xpath("//li[contains(@class,'rtsLI rtsLast')]")[0].click()
