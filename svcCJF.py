@@ -16,7 +16,7 @@ class svcCJF(SMWinservice):
         self.isrunning = False
 
     def main(self):
-        tool.appendInfoToFile('C:\\','test.txt','Starting service...')
+        tool.appendInfoToFile('C:\\','CJF_log.txt','Starting service...')
         try:
             mainCJF.maincjf()
         except:

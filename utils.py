@@ -22,7 +22,7 @@ def devuelveElemento(xPath, browser):
 
 def appendInfoToFile(path,filename,strcontent):
     txtFile=open(path+filename,'a+')
-    txtFile.write(strcontent)
+    txtFile.write(strcontent+'\n')
     txtFile.close()
 
 def processRow(browser,strSearch,row):
