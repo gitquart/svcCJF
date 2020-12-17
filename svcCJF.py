@@ -1,6 +1,8 @@
 from pathlib import Path
 from SMWinservice import SMWinservice
 import mainCJF
+import utils as tool
+import sys
 
 class svcCJF(SMWinservice):
     _svc_name_ = "svcCJF"
@@ -14,8 +16,12 @@ class svcCJF(SMWinservice):
         self.isrunning = False
 
     def main(self):
-        print('Starting svcService...')
-        mainCJF.maincjf()
+        tool.appendInfoToFile('C:\\','test.txt','Starting service...')
+        try:
+            mainCJF.maincjf()
+        except:
+            tool.appendInfoToFile('C:\\','test.txt',str(sys.exc_info()[0]))
+
             
 
 if __name__ == '__main__':
